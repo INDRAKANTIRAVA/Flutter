@@ -1,0 +1,36 @@
+name: magical_doodle
+description: A magical doodle drawing game.
+
+# The following defines the version and environment of your Flutter project
+version: 1.0.0+1
+publish_to: 'none' # Remove this line if you want to publish your app
+
+environment:
+  sdk: ">=3.5.0 <4.0.0" # Dart SDK 3.5.0 and above
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # For drawing functionality
+  flutter_colorpicker: ^1.1.0 # Check compatibility with Dart 3.5.0
+
+  # For working with images and saving them
+  image_gallery_saver: ^1.7.1 # To save images to the gallery
+
+  # For other potential utilities
+  provider: ^6.0.3 # For state management, if needed
+  path_provider: ^2.0.10 # To get the file system paths
+
+  permission_handler: ^10.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/ # For any images you want to include
+    - assets/fonts/   # If you want to include custom fonts
